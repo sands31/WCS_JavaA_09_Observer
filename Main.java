@@ -9,10 +9,10 @@ public class Main {
 			
 			@Override
 			public void onComplete(Bank account) {
+				System.out.println("Transaction succes");
 				System.out.printf("Your balance is: %d%n", account.getTotal());
 			}
 		});
-
-        
+        System.out.printf("Your balance is: %d%n", account.getTotal());        
     }
 }
